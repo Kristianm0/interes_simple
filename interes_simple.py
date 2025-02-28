@@ -28,14 +28,17 @@ Si deja su inversión durante 45 días, ¿cuánto interés habrá ganado?
 
 # 📌 Función - calcular el interés simple
     #Datos
+def calcular_interes_simple(tasa_interes, capital, numero_periodo_tiempo):
     tasa_interes = tasa_interes / 100
-    principal = principal
+    capital = capital
     numero_periodo_tiempo = numero_periodo_tiempo / 365
 
-    #Formula
-    interes_simple = principal * tasa_interes * numero_periodo_tiempo
+    interes_simple = capital * tasa_interes * numero_periodo_tiempo
     return interes_simple
 
 # 📌 Probamos la función con el caso de Don Cangrejo
+interes_ganado = calcular_interes_simple(6, 10000, 45)
+interes_redondeado = round(interes_ganado, 2)  # Redondeamos a 2 decimales
 
 # 📌 Mostramos el resultado
+print(f"📢 Don Cangrejo obtuvo un interés simple de: ${interes_redondeado}")
