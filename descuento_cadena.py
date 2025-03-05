@@ -22,7 +22,7 @@ Si alguien recibe todos los descuentos en cadena, ¿cuánto terminará pagando p
 
 #Importamos decimal
 from decimal import Decimal
-#Funcion
+#Funcion donde le pide los valores por consola
 def descuento_cadena():
     precio = Decimal(input("Dame el precio inicial: "))
     d1 = Decimal(input("Descuento #1: ")) / 100
