@@ -25,7 +25,7 @@ def valor_liquido():
     try:
         valor_nominal = Decimal(input("Dame el Valor nominal: "))
         tasa_descuento = Decimal(input("Dame la tasa de interes: ")) / 100
-        tipo_tiempo = float(input("""
+        tipo_tiempo = int(input("""
         Elige un numero segun el tiempo: 
         1. Año
         2. Meses
